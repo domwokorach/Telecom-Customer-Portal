@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/orbit}
+    driver-class-name: org.postgresql.Driver
+    username: ${DATABASE_USERNAME:orbit}
+    password: ${DATABASE_PASSWORD:orbit_demo_only}
+  jpa:
+    hibernate:
+      # Local portfolio demonstration ONLY; replace with Flyway migrations for production.
+      ddl-auto: update

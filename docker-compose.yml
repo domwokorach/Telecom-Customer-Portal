@@ -1,0 +1,32 @@
+# Optional local PostgreSQL showcase, not a production deployment.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: orbit
+      POSTGRES_USER: orbit
+      POSTGRES_PASSWORD: orbit_demo_only
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - orbit_db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U orbit -d orbit"]
+      interval: 5s
+      retries: 10
+  api:
+    build: ./backend
+    environment:
+      SPRING_PROFILES_ACTIVE: postgres
+      DATABASE_URL: jdbc:postgresql://db:5432/orbit
+      DATABASE_USERNAME: orbit
+      DATABASE_PASSWORD: orbit_demo_only
+      DEMO_USERNAME: demo
+      DEMO_PASSWORD: Demo123!
+    ports:
+      - "127.0.0.1:8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  orbit_db:
