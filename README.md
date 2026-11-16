@@ -111,6 +111,4 @@ This is a **portfolio demo**, not production telecom software. All accounts, inv
 Share the repository README, an accessible preview/demo link, and the [case study](docs/PORTFOLIO_CASE_STUDY.md). To publish a reviewable link, follow [GitHub Pages instructions](docs/PUBLISH.md). Discuss your architectural decisions honestly. Tailor it with features you actually implemented, screenshots and the resulting passing CI checks before adding it to your professional portfolio.
 
 ## Licence
-
 MIT. Fictional brand, user names, accounts and data were created for this demonstration.
-# Telecom-Customer-Portal
