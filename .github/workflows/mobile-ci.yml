@@ -24,5 +24,7 @@ jobs:
         run: npm run typecheck
       - name: Unit and component tests
         run: npm run test:ci
+      - name: Coverage server tests
+        run: npm run server:test
       - name: Export web build
         run: npm run export:web
