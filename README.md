@@ -16,8 +16,8 @@ Obrit Telecommunications is an in-development customer self-service platform foc
 
 <p align="center">
   <img
-    src="docs/images/orbit-mobile-ios.png"
-    alt="Orbit Mobile app on iPhone: PIN entry screen, account dashboard with plan, data usage and bill, and the coverage checker map"
+    src="./docs/images/orbit-mobile-ios.png"
+    alt="Orbit Mobile iOS and Android application"
     width="850"
   />
 </p>
@@ -26,8 +26,8 @@ Obrit Telecommunications is an in-development customer self-service platform foc
 
 <p align="center">
   <img
-    src="docs/images/orbit-mobile-web.png"
-    alt="Orbit Mobile web dashboard shown on a MacBook Pro"
+    src="./docs/images/orbit-mobile-web.png"
+    alt="Orbit Mobile desktop web dashboard"
     width="850"
   />
 </p>
