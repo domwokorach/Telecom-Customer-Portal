@@ -6,10 +6,6 @@ Obrit Telecommunications is an in-development customer self-service platform foc
 
 > **Project status: active development.** This README describes the product direction and the local development workflow. Not every feature listed is complete or connected to a production service, and **all account, billing, usage and support data in the app is demo data** (generated in-app, clearly labelled where it matters). The coverage feature can show real Ofcom predictions only once a valid Ofcom API key is configured; until then it runs in an explicitly labelled demo mode.
 
-<p align="center">
-  <img src="docs/images/orbit-mobile-logo.png" alt="Orbit Mobile logo" width="360" />
-</p>
-
 ## Application showcase
 
 **Mobile application: iOS and Android.** PIN lock, account dashboard and the mobile coverage checker (demo data).
